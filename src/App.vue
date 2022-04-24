@@ -143,6 +143,8 @@
     --normal: #3D5AFE;
   }
   #app {
+    display: flex;
+    justify-content: center;
     height: 100vh;
     width: 100vw;
     padding: 40px 20px;
