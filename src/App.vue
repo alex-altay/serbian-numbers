@@ -138,6 +138,7 @@
 @import '../assets/reset.css';
 
   html {
+    overflow: hidden;
     font-family: 'Fira Sans', sans-serif;
     --wrong: #DD2C00;
     --right: #00C853;
@@ -146,8 +147,9 @@
   #app {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 90vh; 
     width: 100vw;
+    overflow: hidden;
     padding: 40px 20px;
     box-sizing: border-box;
   }
@@ -206,6 +208,4 @@
   .button.right {
     background-color: var(--right);
   }
-
-
 </style>
