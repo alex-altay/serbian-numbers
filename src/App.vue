@@ -94,13 +94,14 @@
 
       getSerbianUnder100(number) {
         const [first, second] = String(number).split("").map(Number);
+        let processedSecond = second === 0 ? "" : uniqueDigits[second];
         switch (first) {
           case 4:
           case 6:
           case 9:
-            return `${uniqueDigits[first * 10]} ${uniqueDigits[second]}`;
+            return `${uniqueDigits[first * 10]} ${processedSecond}`;
           default:
-            return `${uniqueDigits[first]}deset ${uniqueDigits[second]}`;
+            return `${uniqueDigits[first]}deset ${processedSecond}`;
         }
       },
 
