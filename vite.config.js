@@ -11,8 +11,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: '/serbian-numbers/',
-  server: {
-    host: '0.0.0.0'
-  } 
+  base: '/serbian-numbers/'
 })
